@@ -37,6 +37,7 @@ library:
   source-dirs: src
   dependencies:
   - containers
+  - split
 
 executables:
   aoc2025-exe:

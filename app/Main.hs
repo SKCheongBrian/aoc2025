@@ -2,7 +2,9 @@ module Main (main) where
 
 import qualified Day01
 import qualified Day02
+import qualified Day03
 import qualified Day04
+import qualified Day05
 
 main :: IO ()
 main = do
@@ -13,4 +15,5 @@ main = do
     "2" -> Day02.run
     "3" -> Day03.run
     "4" -> Day04.run
+    "5" -> Day05.run
     _   -> putStrLn "Invalid day"
