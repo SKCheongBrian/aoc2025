@@ -38,6 +38,7 @@ library:
   dependencies:
   - containers
   - split
+  - union-find-array
 
 executables:
   aoc2025-exe:

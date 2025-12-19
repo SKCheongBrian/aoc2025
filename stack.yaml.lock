@@ -11,4 +11,11 @@ packages:
       size: 443
   original:
     hackage: split-0.2.5@sha256:5bc1ae848bfded3087ea3e568908f1b75f56ecde6f02df3fad1a138dd5c783d5,2625
+- completed:
+    hackage: union-find-array-0.1.0.4@sha256:1522d9b8f34f16340455ca0b80c7ead2a54bf703329e2fddd9a3cae1ce9b3621,1445
+    pantry-tree:
+      sha256: 3619b548396ef2929b454429ec8a20047042c547f5be7fc1037900b87a27d586
+      size: 482
+  original:
+    hackage: union-find-array-0.1.0.4@sha256:1522d9b8f34f16340455ca0b80c7ead2a54bf703329e2fddd9a3cae1ce9b3621,1445
 snapshots: []
