@@ -20,16 +20,16 @@ parseInput s = parseInput' $ lines s
       ('R':n) -> RightInstr (read n) : parseInput' xs
 
 inter :: [Instr] -> Int
-inter xs = inter' 50 0 xs
+inter = inter' 50 0
   where
-    inter' n c [] = c
-    inter' n c (x:xs) = case x of
+    inter' _ c [] = c
+    inter' n c (x:xs') = case x of
       (LeftInstr j)  -> case (n - j) `mod` 100 of
-        0 -> inter' ((n - j) `mod` 100) (c + 1) xs
-        _ -> inter' ((n - j) `mod` 100) c xs
+        0 -> inter' ((n - j) `mod` 100) (c + 1) xs'
+        _ -> inter' ((n - j) `mod` 100) c xs'
       (RightInstr j) -> case (n + j) `mod` 100 of
-        0 -> inter' ((n + j) `mod` 100) (c + 1) xs
-        _ -> inter' ((n + j) `mod` 100) c xs
+        0 -> inter' ((n + j) `mod` 100) (c + 1) xs'
+        _ -> inter' ((n + j) `mod` 100) c xs'
 
 inter2 :: [Instr] -> Int
 inter2 xs = inter' 50 0 xs
