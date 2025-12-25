@@ -8,7 +8,7 @@
 # A snapshot resolver dictates the compiler version and the set of packages
 # to be used for project dependencies. For example:
 #
-# snapshot: lts-23.24
+snapshot: lts-24.25
 # snapshot: nightly-2025-06-15
 # snapshot: ghc-9.8.4
 #
@@ -17,7 +17,7 @@
 #
 # snapshot: ./custom-snapshot.yaml
 # snapshot: https://example.com/snapshots/2024-01-01.yaml
-snapshot: ghc-9.6.7
+# snapshot: ghc-9.6.7
   # url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/24/22.yaml
 
 # User packages to be built.
@@ -36,8 +36,9 @@ packages:
 # forks / in-progress versions pinned to a git hash. For example:
 #
 extra-deps:
-- split-0.2.5@sha256:5bc1ae848bfded3087ea3e568908f1b75f56ecde6f02df3fad1a138dd5c783d5,2625
-- union-find-array-0.1.0.4@sha256:1522d9b8f34f16340455ca0b80c7ead2a54bf703329e2fddd9a3cae1ce9b3621,1445
+# - split-0.2.5@sha256:5bc1ae848bfded3087ea3e568908f1b75f56ecde6f02df3fad1a138dd5c783d5,2625
+# - union-find-array-0.1.0.4@sha256:1522d9b8f34f16340455ca0b80c7ead2a54bf703329e2fddd9a3cae1ce9b3621,1445
+# - hmatrix-0.20.2@sha256:0d79c947523faf70b4962d6bfa6c00672983ad749073971ace204dd71a149694,5226
 # - containers-0.6.7
 # - acme-missiles-0.3
 # - git: https://github.com/commercialhaskell/stack.git

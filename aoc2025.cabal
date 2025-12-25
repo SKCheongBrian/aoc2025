@@ -33,6 +33,7 @@ library
       Day07
       Day08
       Day09
+      Day10
   other-modules:
       Paths_aoc2025
   autogen-modules:
@@ -44,7 +45,6 @@ library
       base >=4.7 && <5
     , containers
     , split
-    , union-find-array
   default-language: Haskell2010
 
 executable aoc2025-exe
