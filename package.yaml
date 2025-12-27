@@ -38,6 +38,7 @@ library:
   dependencies:
   - containers
   - split
+  - mtl
 
 executables:
   aoc2025-exe:

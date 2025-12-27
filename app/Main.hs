@@ -9,6 +9,7 @@ import qualified Day07
 import qualified Day08
 import qualified Day09
 import qualified Day10
+import qualified Day11
 
 main :: IO ()
 main = do
@@ -24,4 +25,5 @@ main = do
     "8" -> Day08.run
     "9" -> Day09.run
     "10" -> Day10.run
+    "11" -> Day11.run
     _   -> putStrLn "Invalid day"
